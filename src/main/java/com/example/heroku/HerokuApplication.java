@@ -77,8 +77,8 @@ public class HerokuApplication {
   public String getRandomString(){
     StringBuilder s = new StringBuilder();
     for(int i = 0; i < 15; i++) {
-      int c = (int) (Math.random() * ('z' - 'a'));
-      s.append((char) c + 'a');
+      int c = (int) (Math.random() * 26);
+      s.append((char) (c + 'a'));
     }
     return s.toString();
   }
